@@ -1,0 +1,65 @@
+.tabs {
+    max-width: 1200px;
+    margin: 50px auto;
+    font-size: 15px;
+}
+
+.buttons {
+    width: fit-content;
+    background-color: #fff;
+    padding: 7px 10px 0 0px;
+}
+
+.buttons button {
+    padding: 19px 29px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    background: #fff;
+    border: none;
+    border-bottom: 3px solid #fff;
+    /* box-shadow: 4px 3px 10px #ddd; */
+    margin-right: 6px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.buttons button.active {
+    color:  hwb(0 24% 15%);
+    border-bottom: 3px solid  hwb(0 24% 15%);
+}
+
+.content {
+    position: relative;
+}
+
+.content .inner {
+    padding: 25px;
+    box-shadow: 4px 3px 10px #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    opacity: 0;
+    transform: rotateX(-70deg);
+    transform-origin: 0%;
+    transition: all 400ms;
+}
+
+.content .inner.active {
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    transform: rotateX(0deg);
+}
+
+.content .inner h1 {
+    padding-bottom: 15px;
+}
+
+.content .inner p {
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    color: #434343;
+}
